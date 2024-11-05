@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ntv_roll_the_dice/styled_text.dart';
+import 'package:ntv_roll_the_dice/dice_roller.dart';
 
 class GradientSection extends StatelessWidget {
-  const GradientSection(
+   const GradientSection(
     this.colorStart,
     this.colorEnd, {
     super.key,
@@ -21,12 +21,9 @@ class GradientSection extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: Center(
-          child: Column(
-        children: [
-          Image.asset('assets/images/dice-1.png', width: 200),
-        ],
-      )),
+      child: const Center(
+          child: DiceRoller(),
+      ),
     );
   }
 }
